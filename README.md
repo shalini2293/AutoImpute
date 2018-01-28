@@ -2,6 +2,8 @@
 ## About
 Auto-encoder based gene-expression (sparse) matrix imputation, where the columns of the matrix represent the genes and the rows represent the individual cells.
 
+Paper - "AutoImpute : Autoencoder based imputation of single cell RNA-seq data".
+
 ## Dependencies
 * For Python code:
     * python 2.7
@@ -26,7 +28,7 @@ The input is a pre-processed count single cell data. The preprocessing steps are
 * Open terminal, and change the directory (`cd`) to `<directory_name>`.
 * Run the python scripts for a specific dataset using the following command :
     * `python autoencoder_<dataset name>.py --debug <want debug statements "yes"/"no"?>` - for scripts in imputation folder.
-    * `python autoencoder_<dataset name>.py --mask <masking value> --debug <want debug statements "yes"/"no"?>` - for scripts in masked matrix analysis folder.
+    * `python autoencoder_<dataset name>.py --mask <masking percentage> --debug <want debug statements "yes"/"no"?>` - for scripts in masked matrix analysis folder.
 
 _**Note:** If you use any other dataset (apart from Jurkat, PBMC, Preimplantation or Mouse Brain), do the necessary preprocessing as described in the paper, plus, change the repective paths in any of the scripts above to load the preprocessed matrix instead._
 
